@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden City | Luxury Township by Worldwide Realty</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Libs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#main-header">
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="header-nav fixed-top">
+        <div class="container-fluid px-5">
+            <div class="nav-container">
+                <!-- Logo Left -->
+                <a href="#hero" class="navbar-brand d-flex align-items-center py-0">
+                    <img src="logo.png" alt="Golden City Logo" class="logo-img">
+                </a>
+
+                <!-- Navigation Right -->
+                <div class="d-flex align-items-center gap-2 gap-sm-4">
+                    <ul class="navbar-nav flex-row gap-4 d-none d-lg-flex align-items-center">
+                        <li class="nav-item"><a class="nav-link p-0" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#industrial-zones">Zones</a></li>
+                        <li class="nav-item"><a class="nav-link p-0" href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="tel:+00072312321"
+                        class="header-phone d-none d-xl-flex align-items-center gap-2 border-start border-secondary ps-4 ms-2">
+                        📞 <span class="small font-body">+000-723-123-21</span>
+                    </a>
+                    <a href="#contact" class="btn-outline-white d-none d-lg-block">Schedule A Visit &rarr;</a>
+
+                    <!-- Mobile Toggler -->
+                    <button class="navbar-toggler d-lg-none border-0 shadow-none px-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon icon-gold"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Offcanvas -->
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas-header border-bottom border-secondary">
+                <img src="logo.png" alt="Golden City Logo" class="logo-img" style="height: 30px;">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#industrial-zones">Zones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="mt-4">
+                    <a href="#contact" class="btn btn-luxury w-100 py-3">Schedule A Visit</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section vh-100 d-flex align-items-center position-relative overflow-hidden">
+        <div class="hero-bg position-absolute top-0 start-0 w-100 h-100">
+            <img src="assets/img/hero_bg.png" alt="Luxury Township" class="parallax-img w-100 h-100 object-fit-cover">
+            <div class="overlay position-absolute w-100 h-100"></div>
+        </div>
+
+        <div class="container-fluid h-100 position-relative z-2">
+            <div class="row align-items-center h-100 gx-0">
+                <div class="col-lg-7 d-none d-lg-block"></div>
+                <div class="col-lg-5">
+                    <div class="hero-pointers-container">
+                        <ul class="hero-pointers list-unstyled m-0">
+                            <li class="pointer-item fade-up" data-delay="0.2">
+                                <span
+                                    class="pointer-label text-gold text-uppercase ls-2 small mb-1 d-block">Location</span>
+                                <h3 class="pointer-value h2 mb-0">IMT Manesar, Gurgaon</h3>
+                            </li>
+                            <li class="pointer-item fade-up" data-delay="0.4">
+                                <span
+                                    class="pointer-label text-gold text-uppercase ls-2 small mb-1 d-block">Connectivity</span>
+                                <h3 class="pointer-value h2 mb-0">NH-48 & KMP Expressway</h3>
+                            </li>
+                            <li class="pointer-item fade-up" data-delay="0.6">
+                                <span class="pointer-label text-gold text-uppercase ls-2 small mb-1 d-block">Property
+                                    Type</span>
+                                <h3 class="pointer-value h2 mb-0">Integrated Luxury Township</h3>
+                            </li>
+                            <li class="pointer-item fade-up" data-delay="0.8">
+                                <span
+                                    class="pointer-label text-gold text-uppercase ls-2 small mb-1 d-block">Status</span>
+                                <h3 class="pointer-value h2 mb-0">Ready for Possession</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Worldwide Realty Section -->
+    <section id="about-worldwide" class="py-5 bg-light-cream">
+        <div class="container">
+            <div class="row">
+                <div class="text-center mx-auto">
+                    <h2 class="display-4  mb-3 section-title">About <span class="highlight">Worldwide Realty</span></h2>
+                    <div class="about-text-content mb-5">
+                        <p class="mb-4">Looking for industrial plots and land in Manesar and Gurgaon? We offer premium
+                            industrial property options in top locations like IMT Manesar and nearby areas with
+                            excellent connectivity to NH-48, KMP Expressway, and the Delhi Jaipur Highway.</p>
+                        <p class="mb-4">Our portfolio covers a wide range of industries and budgets. From small plot
+                            options to large industrial land parcels, everything is available based on your business
+                            requirements.</p>
+                        <p class="mb-4">Our listings include industrial plots near Manesar, IMT zones, and key
+                            highway-connected locations in Gurgaon. These properties are ideal for manufacturing units,
+                            godown development, and logistics operations due to their strategic positioning and
+                            infrastructure access.</p>
+                        <p class="mb-4">You can also explore industrial land options for warehouse use, including 500 sq
+                            yard and larger plot sizes. Businesses looking for factory setup land in Gurgaon or
+                            manufacturing space in IMT Manesar can find ready-to-use and well-located properties.</p>
+                        <p class="mb-0">We provide updated information on industrial plot prices in Manesar and land
+                            rates in Gurgaon, helping you choose options that fit your budget. Whether you're searching
+                            for affordable land or premium investment opportunities, there are multiple choices
+                            available.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Residences -->
+                <div class="col-md-4 reveal-up">
+                    <div class="sketch-domain-card luxury-rounded">
+                        <div class="domain-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                        </div>
+                        <h3 class="domain-sketch-title">The Golden Residences</h3>
+                        <p class="opacity-75">Bespoke living crafted for those who seek tranquility and modern elegance
+                            in the heart of nature.</p>
+                    </div>
+                </div>
+                <!-- Industrial -->
+                <div class="col-md-4 reveal-up" data-delay="0.2">
+                    <div class="sketch-domain-card luxury-rounded">
+                        <div class="domain-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 7V3H3v4" />
+                                <path d="M3 11v10h18V11" />
+                                <path d="m14 11-2 4 2 4" />
+                                <path d="m10 11 2 4-2 4" />
+                            </svg>
+                        </div>
+                        <h3 class="domain-sketch-title">Golden Industrial Zone</h3>
+                        <p class="opacity-75">A powerhouse of productivity offering expansive industrial plots with
+                            world-class connectivity.</p>
+                    </div>
+                </div>
+                <!-- Commercial -->
+                <div class="col-md-4 reveal-up" data-delay="0.4">
+                    <div class="sketch-domain-card luxury-rounded">
+                        <div class="domain-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                            </svg>
+                        </div>
+                        <h3 class="domain-sketch-title">Upcoming Commercial</h3>
+                        <p class="opacity-75">Future-ready high-street retail and vibrant dining experiences designed
+                            for the modern executive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="display-4  text-center mb-5 section-title">Golden City <span class="highlight">Gallery</span>
+            </h2>
+            <div class="row g-3">
+                <!-- Gallery Item 1 -->
+                <div class="col-lg-3 col-md-4 col-6 reveal-up">
+                    <a data-fslightbox="gallery"
+                        href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200"
+                        class="gallery-img-wrapper ratio ratio-1x1 d-block overflow-hidden luxury-rounded">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800"
+                            alt="Luxury Estate 1" class="img-fluid object-fit-cover hover-scale transition-img">
+                    </a>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="col-lg-3 col-md-4 col-6 reveal-up" data-delay="0.1">
+                    <a data-fslightbox="gallery"
+                        href="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200"
+                        class="gallery-img-wrapper ratio ratio-1x1 d-block overflow-hidden luxury-rounded">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800"
+                            alt="Luxury Estate 2" class="img-fluid object-fit-cover hover-scale transition-img">
+                    </a>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="col-lg-3 col-md-4 col-6 reveal-up" data-delay="0.2">
+                    <a data-fslightbox="gallery"
+                        href="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200"
+                        class="gallery-img-wrapper ratio ratio-1x1 d-block overflow-hidden luxury-rounded">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=800"
+                            alt="Luxury Estate 3" class="img-fluid object-fit-cover hover-scale transition-img">
+                    </a>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="col-lg-3 col-md-4 col-6 reveal-up" data-delay="0.3">
+                    <a data-fslightbox="gallery"
+                        href="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200"
+                        class="gallery-img-wrapper ratio ratio-1x1 d-block overflow-hidden luxury-rounded">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=800"
+                            alt="Luxury Estate 4" class="img-fluid object-fit-cover hover-scale transition-img">
+                    </a>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="col-lg-3 col-md-4 col-6 reveal-up" data-delay="0">
+                    <a data-fslightbox="gallery"
+                        href="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200"
+                        class="gallery-img-wrapper ratio ratio-1x1 d-block overflow-hidden luxury-rounded">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=800"
+                            alt="Luxury Estate 5" class="img-fluid object-fit-cover hover-scale transition-img">
+                    </a>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="col-lg-3 col-md-4 col-6 reveal-up" data-delay="0.1">
+                    <a data-fslightbox="gallery"
+                        href="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200"
+                        class="gallery-img-wrapper ratio ratio-1x1 d-block overflow-hidden luxury-rounded">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800"
+                            alt="Luxury Estate 6" class="img-fluid object-fit-cover hover-scale transition-img">
+                    </a>
+                </div>
+                <!-- Gallery Item 7 -->
+                <div class="col-lg-3 col-md-4 col-6 reveal-up" data-delay="0.2">
+                    <a data-fslightbox="gallery"
+                        href="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?q=80&w=1200"
+                        class="gallery-img-wrapper ratio ratio-1x1 d-block overflow-hidden luxury-rounded">
+                        <img src="https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?q=80&w=800"
+                            alt="Luxury Estate 7" class="img-fluid object-fit-cover hover-scale transition-img">
+                    </a>
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="col-lg-3 col-md-4 col-6 reveal-up" data-delay="0.3">
+                    <a data-fslightbox="gallery"
+                        href="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200"
+                        class="gallery-img-wrapper ratio ratio-1x1 d-block overflow-hidden luxury-rounded">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=800"
+                            alt="Luxury Estate 3" class="img-fluid object-fit-cover hover-scale transition-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrial Specialization Zones -->
+    <section id="industrial-zones" class="py-5 bg-soft-gold">
+        <div class="container text-center">
+            <h2 class="display-4  mb-5 section-title">Industrial <span class="highlight">Specialization
+                    Zones</span></h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Green Zone -->
+                <div class="col-lg-3 col-md-6 reveal-up">
+                    <div class="zone-card shadow-sm luxury-rounded">
+                        <div class="zone-header title-green">
+                            <h4 class="zone-title m-0">Green Zone</h4>
+                        </div>
+                        <div class="zone-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800"
+                                alt="Green Zone" class="w-100 h-100 object-fit-cover hover-scale transition-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- White Zone -->
+                <div class="col-lg-3 col-md-6 reveal-up" data-delay="0.1">
+                    <div class="zone-card shadow-sm luxury-rounded">
+                        <div class="zone-header title-white">
+                            <h4 class="zone-title m-0">White Zone</h4>
+                        </div>
+                        <div class="zone-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800"
+                                alt="White Zone" class="w-100 h-100 object-fit-cover hover-scale transition-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Orange Zone -->
+                <div class="col-lg-3 col-md-6 reveal-up" data-delay="0.2">
+                    <div class="zone-card shadow-sm luxury-rounded">
+                        <div class="zone-header title-orange">
+                            <h4 class="zone-title m-0">Orange Zone</h4>
+                        </div>
+                        <div class="zone-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800"
+                                alt="Orange Zone" class="w-100 h-100 object-fit-cover hover-scale transition-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Red Zone -->
+                <div class="col-lg-3 col-md-6 reveal-up" data-delay="0.3">
+                    <div class="zone-card shadow-sm luxury-rounded">
+                        <div class="zone-header title-red">
+                            <h4 class="zone-title m-0">Red Zone</h4>
+                        </div>
+                        <div class="zone-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800"
+                                alt="Red Zone" class="w-100 h-100 object-fit-cover hover-scale transition-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- About Developers Section -->
+    <section id="developer-about" class="py-5 bg-white">
+        <div class="container text-center">
+            <div class="mx-auto mb-5 reveal-up">
+                <h2 class="display-4  mb-5 section-title">About Developers <span class="highlight">Worldwide
+                        Realty</span></h2>
+                <div class="about-text-content">
+                    <p class="lead opacity-75 mb-0 luxury-paragraph">Worldwide Realty is a name synonymous with trust
+                        and excellence. We specialize in creating integrated townships that redefine modern living and
+                        industrial efficiency in the Indian real estate landscape. Our legacy is built on a foundation
+                        of architectural innovation and a commitment to sustainable growth.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Residential Floor Plans Section -->
+    <section id="floor-plans" class="py-5 bg-light-cream">
+        <div class="container">
+            <div class="text-center mb-5 reveal-up">
+                <h2 class="display-4  mb-3 section-title">Residential <span class="highlight">Floor Plans</span>
+                </h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Futuristic House -->
+                <div class="col-md-4 reveal-up">
+                    <div class="plan-card overflow-hidden luxury-rounded bg-black-soft h-100">
+                        <div class="plan-img-wrapper ratio ratio-1x1 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800"
+                                alt="Futuristic House" class="img-fluid object-fit-cover transition-img hover-scale">
+                        </div>
+                        <div class="plan-info p-4">
+                            <h3 class="h4  mb-3">Futuristic House</h3>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplex Apartment -->
+                <div class="col-md-4 reveal-up" data-delay="0.2">
+                    <div class="plan-card overflow-hidden luxury-rounded bg-black-soft h-100 position-relative">
+                        <span class="plan-badge-new">New</span>
+                        <div class="plan-img-wrapper ratio ratio-1x1 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800"
+                                alt="Duplex Apartment" class="img-fluid object-fit-cover transition-img hover-scale">
+                        </div>
+                        <div class="plan-info p-4">
+                            <h3 class="h4  mb-3">Duplex Apartment</h3>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modern House -->
+                <div class="col-md-4 reveal-up" data-delay="0.4">
+                    <div class="plan-card overflow-hidden luxury-rounded bg-black-soft h-100">
+                        <div class="plan-img-wrapper ratio ratio-1x1 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800"
+                                alt="Modern House" class="img-fluid object-fit-cover transition-img hover-scale">
+                        </div>
+                        <div class="plan-info p-4">
+                            <h3 class="h4  mb-3">Modern House</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request A Viewing Section -->
+    <section id="contact" class="py-5 contact-section-bg text-white">
+        <div class="container text-center">
+            <div class="glass-form-card reveal-up">
+                <div class="max-w-700 mx-auto mb-5">
+                    <h2 class="display-3  mb-4 section-title-white">Request A Viewing</h2>
+                    <p class="opacity-60 small">Experience the pinnacle of luxury living. Schedule your private floor
+                        tour today and witness the golden standard of real estate.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <form id="viewing-form" class="row g-4">
+                            <div class="col-12">
+                                <div class="viewing-form-group">
+                                    <label class="viewing-label">Full Name*</label>
+                                    <input type="text" class="form-control viewing-input" placeholder="Full Name*">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="viewing-form-group">
+                                    <label class="viewing-label">E-mail*</label>
+                                    <input type="email" class="form-control viewing-input" placeholder="E-mail*">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="viewing-form-group">
+                                    <label class="viewing-label">Phone*</label>
+                                    <input type="tel" class="form-control viewing-input" placeholder="Phone*">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="viewing-form-group">
+                                    <label class="viewing-label">Message</label>
+                                    <textarea class="form-control viewing-input" rows="4"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-luxury w-100 py-3 text-uppercase  ls-2 border-0">Submit
+                                    Request</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black text-white border-top border-secondary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
+                    <img src="logo.png" alt="Golden City Logo" class="footer-logo">
+                    <p class="small opacity-50 mb-0">Worldwide Realty Landmarks | IMT Manesar, Gurgaon</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end mb-3 footer-social">
+                        <a href="#" class="mx-2 text-white opacity-50">LinkedIn</a>
+                        <a href="#" class="mx-2 text-white opacity-50">Instagram</a>
+                        <a href="#" class="mx-2 text-white opacity-50">Facebook</a>
+                    </div>
+                    <p class="small opacity-25">&copy; 2026 Worldwide Realty. Developed by Excellence.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- script for lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+    <!-- custom scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
