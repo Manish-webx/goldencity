@@ -410,7 +410,28 @@ h6,
     font-size: 1.1rem;
     line-height: 1.8;
     color: #444;
-    text-align: center;
+}
+
+.about-feature-item {
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    border-left: 3px solid transparent;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.about-feature-item:hover {
+    transform: translateX(12px);
+    border-left-color: var(--primary-gold);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-bullet {
+    color: var(--primary-gold);
+    font-size: 1.4rem;
+    line-height: 1.2;
+    display: inline-block;
 }
 
 .btn-navy-pill {
@@ -915,8 +936,16 @@ body::before {
 }
 
 .sketch-domain-card:hover .domain-icon-wrapper {
-    background: var(--primary-gold);
     transform: rotateY(180deg);
+}
+
+.domain-icon-wrapper img {
+    object-fit: contain;
+    transition: all 0.5s ease;
+}
+
+.sketch-domain-card:hover .domain-icon-wrapper img {
+    transform: rotateY(-180deg) scale(1.1);
 }
 
 .domain-icon-wrapper svg {
